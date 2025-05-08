@@ -1,0 +1,4 @@
+# https://bevyengine.org/learn/quick-start/getting-started/setup/#enable-fast-compiles-optional
+[target.x86_64-unknown-linux-gnu]
+linker = "clang"
+rustflags = ["-C", "link-arg=-fuse-ld=/usr/bin/mold"]
